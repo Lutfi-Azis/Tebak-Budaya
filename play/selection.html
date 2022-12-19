@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamemode Selection - Tebak Budaya</title>
+  </head>
+  <body>
+    <nav>
+      <a class="navbar-brand">Tebak Budaya</a>
+      <div class="d-flex">
+        <button class="btn-sign">Masuk</button>
+        <button class="btn-sign">Daftar</button>
+      </div>
+    </nav>
+    <section class="gamemode-menu">
+      <p class="leading-explanation">Pilihlah mode yang ingin Anda mainkan</p>
+      <div class="gamemode-selection" role="button">
+        <div class="gamemode-selection-card">
+          <img
+            src="/assets/images/bali-building.jpg"
+            alt="Foto bangunan tua di Bali"
+          />
+          <header>Tebak Wilayah</header>
+        </div>
+      </div>
+      <div class="gamemode-selection">
+        <div class="gamemode-selection-card" role="button">
+          <img
+            src="/assets/images/traditional-dress.jpg"
+            alt="Sepasang suami istri memakai pakaian tradisional"
+          />
+          <header>Tebak Baju Adat</header>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/src/global.ts"></script>
+    <script type="module" src="./selection.ts"></script>
+  </body>
+</html>

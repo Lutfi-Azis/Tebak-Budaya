@@ -1,0 +1,28 @@
+@import "/src/global.scss";
+
+.gamemode-menu {
+  @extend .container-fluid, .row, .justify-content-center, .gx-5;
+  @extend .text-center;
+
+  .leading-explanation {
+    @extend .py-4;
+  }
+
+  .gamemode-selection {
+    @extend .col-sm-3;
+
+    .gamemode-selection-card {
+      @extend .card;
+
+      img {
+        @extend .card-img-top;
+      }
+
+      header {
+        @extend .card-body, .fs-4, .text-secondary;
+        font-family: $font-family-bubbly;
+        font-weight: 900;
+      }
+    }
+  }
+}

@@ -2,15 +2,23 @@
 
 $theme-colors: (
   "primary": #ff9b63,
+  "secondary": #51b948,
 );
 
 @import "bootstrap";
+
+$text-lead-color: darken(map-get($theme-colors, "primary"), 25%);
 
 $font-family-bubbly: Nunito;
 
 nav {
   @extend .navbar;
   padding: 0.5 * $spacer;
+}
+
+.leading-explanation {
+  @extend .lead, .fw-normal;
+  color: $text-lead-color;
 }
 
 .btn-sign {
