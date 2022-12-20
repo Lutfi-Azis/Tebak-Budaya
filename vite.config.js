@@ -13,6 +13,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         "play/selection": resolve(__dirname, "play", "selection.html"),
+        "user/sign-in": resolve(__dirname, "user", "sign-in.html"),
+        "user/register": resolve(__dirname, "user", "register.html"),
       },
     },
   },

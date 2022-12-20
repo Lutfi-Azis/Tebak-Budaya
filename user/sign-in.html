@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In - Tebak Budaya</title>
+  </head>
+  <body>
+    {{> header }}
+
+    <section class="pop-form">
+      <form>
+        <div>
+          <input type="email" id="email" class="form-control" />
+          <label class="form-label" for="email">Email</label>
+        </div>
+
+        <div>
+          <input type="password" id="password" class="form-control" />
+          <label class="form-label" for="password">Kata Sandi</label>
+        </div>
+
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="remember"
+                checked
+              />
+              <label class="form-check-label" for="remember">
+                Ingat saya
+              </label>
+            </div>
+          </div>
+
+          <div class="col">
+            <!-- Simple link -->
+            <a href="#!">Lupa Kata Sandi?</a>
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <button type="button" class="form-submit">Masuk</button>
+      </form>
+    </section>
+    <script type="module" src="/src/global.ts"></script>
+    <script type="module" src="./sign-in.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+@import "/src/global.scss";
+
+.pop-form {
+  @extend .row, .justify-content-md-center, .px-2;
+  form {
+    @extend .col-md-5;
+    div {
+      @extend .mb-2;
+    }
+    .form-submit {
+      @extend .btn, .btn-primary, .mb-4;
+      width: 100%;
+    }
+  }
+}
